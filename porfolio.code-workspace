@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/marti/Desktop/angela/miweb"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "C:/xampp/htdocs/php"
+		}
+	],
+	"settings": {
+		"livePreview.openPreviewTarget": "External Browser",
+		"livePreview.defaultPreviewPath": "h:\\Unidades compartidas\\SHARE_online\\SHARE\\SEGUNDO\\DIW\\porfolio\\index.html",
+		"liveServer.settings.multiRootWorkspaceName": "SEGUNDO"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+		
+		]
+	}
+}

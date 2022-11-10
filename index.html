@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- import css style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- import mediaquery -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <title>Porfolio</title>
+</head>
+
+<!-- menu de botones y filtros-->
+<body>
+  <div class="btn-container">
+    <div class="menu">
+      <ul>
+        <li class="todos active"><a href="#" class="btn-menu" data-filter="todos">Todos</a></li> 
+        <li class="arquitectura"><a href="#" class="btn-menu" data-filter="arquitectura">Arquitectura</a></li>
+        <li class="retrato"><a href="#" class="btn-menu" data-filter="retrato">Retrato</a></li>
+        <li class="paisaje"><a href="#" class="btn-menu" data-filter="paisaje">Paisaje</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- linea divisoria gradient-color -->       
+  <div class="linea-color"></div>
+
+  <!-- grid container -->
+  <div class="grid-container">
+    <!-- grid imagenes -->
+    <div class="grid-item arquitectura" style="background-image: url(img/arq1.jpg)"></div>
+    <div class="grid-item arquitectura" style="background-image: url(img/arq2.jpg)"></div>
+    <div class="grid-item arquitectura" style="background-image: url(img/arq3.jpg)"></div>
+    <div class="grid-item arquitectura" style="background-image: url(img/arq4.jpg)"></div>
+    <div class="grid-item paisaje" style="background-image: url(img/paisaje1.jpg)"></div>
+    <div class="grid-item paisaje" style="background-image: url(img/paisaje2.jpg)"></div>
+    <div class="grid-item paisaje" style="background-image: url(img/paisaje3.jpg)"></div>
+    <div class="grid-item retrato" style="background-image: url(img/retrato1.jpg)"></div>
+    <div class="grid-item retrato" style="background-image: url(img/retrato2.jpg)"></div>
+    <div class="grid-item retrato" style="background-image: url(img/retrato3.jpg)"></div>
+  </div>
+  <!-- import jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- import js -->
+  <script type="text/javascript" src="js\index.js"></script>
+  
+</body>
+</html>

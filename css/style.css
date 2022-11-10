@@ -1,0 +1,108 @@
+/* reseteo del documento */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 0;
+}
+
+body {
+  background-color: #22313f;
+  font-family: sans-serif;
+}
+
+.btn-container{
+  padding-top: 10px;
+}
+
+.menu ul{
+list-style: none;
+width: 100%;
+display: table;
+}
+
+/* stilos de botones de filtro */
+.menu ul .todos {background:#e66465;}
+.menu ul .arquitectura {background:#ca758f;}
+.menu ul .retrato {background:#b184b4 ;}
+.menu ul .paisaje {background: #9198e5;}
+
+
+.menu ul li{
+  font-size: medium;
+  display: table-cell;  
+  width: calc(30px * 4);
+}
+
+.menu ul a{
+  text-decoration: none;
+  display: block;
+  color: #22313f;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* linea divisoria gradiente */
+.linea-color {
+  background: linear-gradient(90deg, #e66465, #9198e5);
+  ;
+  padding: 0.5px;
+}
+
+/* hover btn filtros */
+.btn-menu:hover{
+  background: #22313f;
+  color: rgb(98, 98, 98);
+  /* border: 1px solid ;
+  border-image: linear-gradient(90deg, purple, orange) 0.5; */
+
+  }
+  /* grid del contenedor */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  /*grid  de las imagenes*/
+.grid-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: steelblue;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.active{
+  border-bottom: 4px solid turquoise;
+}
+
+/* hover de imagenes */
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}  
+
+/* mediaqueries */
+@media(min-with:600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+
+/* @media(min-with: 600px){
+
+} */
